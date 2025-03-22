@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mở khóa ví Pi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Status Bar */
+        .status-bar {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #6b3fa0;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .back-arrow,
+        .header .dropdown-arrow {
+            font-size: 20px;
+        }
+
+        .header .wallet-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header .wallet-title img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #888;
+            font-size: 16px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button.outline {
+            border: 1px solid #6b3fa0;
+            color: #6b3fa0;
+            background-color: transparent;
+        }
+
+        .button.filled {
+            background-color: #6b3fa0;
+            color: #fff;
+            border: none;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .description .bold {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Footer Navigation */
+        .footer-nav {
+            background-color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer-nav a {
+            color: #888;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <span>22:12</span>
+        <span>5G ••• 5%</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <span class="back-arrow">&larr;</span>
+        <div class="wallet-title">
+            <img src="https://via.placeholder.com/24" alt="Wallet Icon">
+            <span>Wallet</span>
+            <img src="https://via.placeholder.com/24" alt="Pi Icon">
+        </div>
+        <span class="dropdown-arrow">&darr;</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1>Mở khóa ví Pi</h1>
+        <div class="input-field">
+            Nhập cụm mật khẩu 24 từ của bạn tại đây
+        </div>
+        <a href="#" class="button outline">MỞ KHÓA VỚI CỤM MẬT KHẨU</a>
+        <a href="#" class="button filled">MỞ KHÓA BẰNG VÂN TAY</a>
+        <p class="description">
+            Là một ví không giám sát, cụm mật khẩu của bạn chỉ có bạn mới có thể truy cập. Hiện tại không thể khôi phục cụm mật khẩu.
+        </p>
+        <p class="description">
+            <span class="bold">Bạn bị mất cụm mật khẩu ví?</span> Bạn có thể tạo một ví mới, nhưng tất cả số π trong ví trước đó của bạn sẽ không thể truy cập được.
+        </p>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="footer-nav">
+        <a href="#">&larr;</a>
+        <a href="#">⭕</a>
+        <a href="#">≡</a>
+        <a href="#">👤</a>
+    </footer>
+</body>
+</html>
